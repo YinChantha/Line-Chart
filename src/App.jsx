@@ -5,7 +5,7 @@ import "./App.css";
 import { getAllfixeddepositlist } from "../public/service/calldata";
 import { Combobox, Transition } from "@headlessui/react";
 import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
-import Chart from "./Chart";
+import Chart from "../public/Chart";
 
 const term = [
   { id: 1, name: "6" },
@@ -97,7 +97,7 @@ function App() {
   };
   return (
     <div>
-      <div class="bg-gray-200 inset-0"></div>
+      <div className="bg-gray-200 inset-0"></div>
       <div>
         <button
           onClick={GetFixedDeposits}
@@ -106,7 +106,7 @@ function App() {
           Test Api Call
         </button>
         <div className="flex flex-col gap-3 w-full relative z-10">
-          <label for="value" className="labelStyle">
+          <label htmlFor="value" className="labelStyle">
             Select your bank
           </label>
           <Combobox value={selectedBank} onChange={handleBankChange} multiple>
@@ -177,7 +177,7 @@ function App() {
           </Combobox>
         </div>
         <div className="flex flex-col gap-3 w-full relative ">
-          <label for="value" className="labelStyle">
+          <label htmlFor="value" className="labelStyle">
             Select your Rate
           </label>
           <Combobox value={selectedTerm} onChange={handleTermChange} multiple>
@@ -250,7 +250,7 @@ function App() {
 
         <div className="flex flex-col gap-3 w-full">
           <div className="flex flex-row justify-center ">
-            <label for="value" className="labelStyle truncate ">
+            <label htmlFor="value" className="labelStyle truncate ">
               Select currency
             </label>
           </div>
@@ -261,7 +261,7 @@ function App() {
         </div>
         <div className="flex flex-col gap-3 w-full">
           <div className="flex flex-row justify-center">
-            <label for="value" className="labelStyle truncate ">
+            <label htmlFor="value" className="labelStyle truncate ">
               Select rateAt
             </label>
           </div>
