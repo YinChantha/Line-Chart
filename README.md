@@ -7,3 +7,5 @@ This is my private project using an API call to show different banks in Cambodia
       - cd <your project>
       - npm install
       - npm run dev
+
+ Then you can test and play around with our project (Noted: That is real data in all banks in Cambodia)
